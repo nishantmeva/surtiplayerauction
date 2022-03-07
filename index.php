@@ -53,6 +53,11 @@ if ($_POST) {
         text-align: center;
         opacity: 0.7;
     }
+    .mataImage{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
     .panel-info{
         font-size: 20px;
     }
@@ -101,6 +106,11 @@ if ($_POST) {
         </div>
     </div>
     
+    <div class="row">
+        <div class="mataImage">
+            <img src="common_uploads/mata.png" />
+        </div>  
+    </div>
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
             <div class="row panel panel-default panel-info" style="margin-top: 25px;">

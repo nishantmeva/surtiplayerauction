@@ -22,7 +22,8 @@ body {
     font-size: 25px;
     font-weight: 700;
     font-family: -webkit-pictograph;
-    text-shadow: 1px 1px #000b2d;
+    text-shadow: 1px 1px #3B3E79;
+    color:#3B3E79;
 }
 p{
     font-family: "Josefin Sans",sans-serif;
@@ -75,12 +76,13 @@ p{
     box-shadow: 0px 4px 5px 6px #434343; border-radius: 50%; width: 100%;
 }
 .playerdetail, .playerdetail b{
-    color: #fff;
+    color: #3B3E79;
+    font-weight: 700;
 }
 .playerblock{ margin-top: 60px; }
 .playerName{ font-size: 28px; padding-bottom: 35px; text-transform: uppercase;}
-.playerOther span,.pointData{ text-transform: uppercase; color: #fff;}
-.playerOther { font-size: 20px; padding: 5px 0;  color: #e3dfe7;}
+.playerOther span,.pointData{ text-transform: uppercase; color: #3B3E79; font-weight: 500;}
+.playerOther { font-size: 20px; padding: 5px 0;  color: #3B3E79;}
 .auctionpage { 
     padding-top: 20px;
     padding-bottom: 60px;
@@ -131,10 +133,10 @@ p{
     padding: 5px;
     border-radius: 20px;
 }
-.AuctionCountOuter{ font-size: 30px; padding: 15px; color: #fff;}
+.AuctionCountOuter{ font-size: 30px; padding: 15px; color: #3B3E79;}
 .BidTeamData .teamName {
     font-size: 22px;
-    color: #fff;
+    color: #3B3E79;
     text-transform: uppercase;
 }
 
