@@ -73,6 +73,9 @@ $teams = getTeams();
   </div>
 </div>
 </section>
-
+<audio id="myAudio">
+  <source src="salam_rocky_bhai.ogg" type="audio/ogg">
+  <source src="salam_rocky_bhai.mp3" type="audio/mpeg">
+</audio>
 <?php require_once('footer.php'); ?>
         
