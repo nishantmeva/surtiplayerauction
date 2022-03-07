@@ -1,0 +1,209 @@
+body {
+    /* //position: fixed; */
+    /* The image used */
+    background-image: url("../../../common_uploads/bg.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    font-size: 13px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Josefin Sans",sans-serif;
+}
+.header-area {
+    background-color: #3b3e79;
+}
+.header-area .main-header .menu-wrapper {
+    color: #fff;
+    max-height: 40px;
+}
+.nametxt{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: -webkit-pictograph;
+    text-shadow: 1px 1px #000b2d;
+}
+p{
+    font-family: "Josefin Sans",sans-serif;
+}
+.namepretxt{ font-size: 12px; }
+.d-lg-block {
+    width: 100%;
+    text-align: center;
+}
+.header-area .main-header .menu-wrapper .main-menu ul li a{
+    color: #fff;
+    padding: 10px 21px;
+}
+.teamsLogosWrap{margin: 25px 0 0;}
+.teamsLogos { width: 100%; text-align: center; margin: 25px 0 0; }
+.teamsLogos img{   
+    width: 37%;
+    box-shadow: 0px 3px 5px 6px #434343;
+    margin: 15px; 
+    padding: 5px;
+    border-radius: 20px;
+}
+.trophy{width: 350px;}
+.card-body{  flex: 1 1 auto;  padding: 0;}
+.mainblock{
+    margin: 20px 0;
+}
+
+.btn{
+    padding: 18px 28px;
+    border-radius: 5px;
+}
+
+.btn-primary{ background-color: #0069D9;}
+.btn-warning{ background-color: #E0A800;}
+.btn-danger{ background-color: #C82333;}
+
+.auction-form{
+    float: right !important;
+    padding-top: 10px;
+}
+
+.contHead{
+    text-align: center;
+    color: #3B3E79;
+}
+.contHead p{ line-height: 22px; color: #3B3E79;}
+
+.playerblock .playerImg{ 
+    box-shadow: 0px 4px 5px 6px #434343; border-radius: 50%; width: 100%;
+}
+.playerdetail, .playerdetail b{
+    color: #fff;
+}
+.playerblock{ margin-top: 60px; }
+.playerName{ font-size: 28px; padding-bottom: 35px; text-transform: uppercase;}
+.playerOther span,.pointData{ text-transform: uppercase; color: #fff;}
+.playerOther { font-size: 20px; padding: 5px 0;  color: #e3dfe7;}
+.auctionpage { 
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-image: url("../../../common_uploads/auction_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+}
+
+.teamBtnUL li{
+    display: inline-block;
+    background: rgb(218, 214, 214);
+    width: 40px;
+    /* height: 40px; */
+    margin: 5px;
+}
+.formdata{ display: inline-block;}
+.AuctionSummaryData { height: 200px;} 
+#teamButton {padding-top: 95px;}
+.AuctionCount {text-transform: uppercase; line-height: 35px;  margin-bottom: 10px;}
+.teamBtnUL li a{ 
+    color: #434343;
+    font-weight: 700;
+    padding: 8px;
+    text-align: center;
+    display: block;
+}
+
+.stampdiv {
+    position: absolute;
+    left: 230px;
+    top: 10px;
+}
+
+.celebdiv{
+    position: absolute;
+    left: -130px;
+    top: 25px;
+}
+
+.stampdiv img{
+    width: 210px;
+}
+.teamimg img{
+    width:200px;
+    box-shadow: 0px 3px 5px 6px #434343;
+    margin: 15px; 
+    padding: 5px;
+    border-radius: 20px;
+}
+.AuctionCountOuter{ font-size: 30px; padding: 15px; color: #fff;}
+.BidTeamData .teamName {
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.pointData,.teamName{ margin-bottom: 15px;}
+.pointData{ font-size: 25px; padding-bottom: 15px; }
+
+
+.teamplayerPage{ margin: 25px 0;}
+.playesDataWrapper{text-align: center; margin-bottom: 20px;}
+.playesDataWrapper .playerInner{padding-top: 15px;}
+.playesDataWrapper .playerImg{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 3px 5px 6px #434343;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .teamsLogos img{   width: 36%;   }
+    .contHead p{ line-height: 25px;}
+    .nametxt{   font-size: 28px; }
+    
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    .teamsLogos img{   
+        width: 40%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+    .nametxt{
+        font-size: 75px;
+    }
+    .header-area .main-header .menu-wrapper {
+        max-height: 50px;
+    }
+    .teamsLogos img{   
+        width: 45%;
+    }
+}
+    
