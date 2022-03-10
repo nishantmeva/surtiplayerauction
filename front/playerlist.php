@@ -3,7 +3,7 @@ require_once('header.php');
 
 $playerList = getPlayerList();
 $teamList = getTeams();
-// echo "<pre>"; print_r($playerList); exit;
+//  echo "<pre>"; print_r($teamList); exit;
 ?>
 
 <!-- Page Content-->
@@ -38,10 +38,12 @@ $teamList = getTeams();
                             <td><img width="50px" src="../common_uploads/players/<?= $data['photo']; ?>"/></td>
                             <td>
                                 <?= strtoupper($data['name']); ?></br>
-                                <?php if(!empty($teamList[$data['team_id']])){ 
-                                    $teamData = $teamList[$data['team_id']];
+                                <?php 
+                                if(!empty($teamList[$data['team_id']])){ 
+                                    $teamData = $teamList[$data['team_id']-1];
                                     $teamName = $teamData['name'];
                                     echo "<small><b>".$teamName."</b></small>";
+                                    unset($teamName,$teamData);
                                 } ?>
                                 <?php if($data['is_captain']){
                                     echo " | <small><b>Captain</b></small>";
