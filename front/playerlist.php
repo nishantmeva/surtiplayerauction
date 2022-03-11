@@ -4,6 +4,12 @@ require_once('header.php');
 $playerList = getPlayerList();
 $teamList = getTeams();
 //  echo "<pre>"; print_r($teamList); exit;
+$teamArr = array();
+if(!empty($teamList)){
+    foreach ($teamList as $key => $value) {
+        $teamArr[$value['id']] = $value['name'];
+    }
+}
 ?>
 
 <!-- Page Content-->
@@ -39,12 +45,12 @@ $teamList = getTeams();
                             <td>
                                 <?= strtoupper($data['name']); ?></br>
                                 <?php 
-                                if(!empty($teamList[$data['team_id']])){ 
-                                    $teamData = $teamList[$data['team_id']-1];
-                                    $teamName = $teamData['name'];
+                                if(!empty($teamArr[$data['team_id']])){
+                                    $teamName = $teamArr[$data['team_id']];
                                     echo "<small><b>".$teamName."</b></small>";
-                                    unset($teamName,$teamData);
-                                } ?>
+                                    unset($teamName);
+                                }
+                                ?>
                                 <?php if($data['is_captain']){
                                     echo " | <small><b>Captain</b></small>";
                                 }?>

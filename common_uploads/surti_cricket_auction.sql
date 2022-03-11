@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 07, 2022 at 04:31 PM
+-- Generation Time: Mar 11, 2022 at 04:16 PM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `players` (
   `status` int(11) NOT NULL DEFAULT '1' COMMENT '1. Active 2. InActive',
   `created` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=159 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=172 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `players`
@@ -90,7 +90,7 @@ INSERT INTO `players` (`id`, `name`, `previous_team`, `formno`, `memberno`, `age
 (38, 'DHARMESH BHARATBHAI GANDHI', 'ABC CLUB', '38', '40', 33, '8734867040', '38.jpg', 'Right Handed', 'No', 'Yes', 1, ''),
 (39, 'DENISH PANWALA', 'ABC CLUB', '39', '4', 36, '9265822735', '39.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (40, 'JADAWALA UDIT D', '-', '40', '17', 25, '9033232026', '40.jpg', 'LEFT ARM', 'Right Arm', 'No', 1, ''),
-(41, 'ANKIT KIRITKUMAR CHAHWALA', '', '41', '18', 35, '9376705032', '41.jpg', 'Right Handed', 'No', 'Yes', 1, ''),
+(41, 'ANKIT KIRITKUMAR CHAHWALA', '-', '41', '18', 35, '9376705032', '41.jpg', 'Right Handed', 'No', 'Yes', 1, ''),
 (42, 'MRUNAL D JADAWALA', '-', '42', '31', 20, '9601018288', '42.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
 (43, 'RINKESH DEVENDRA MODI', 'ROVERS XI', '43', '32', 35, '9825327496', '43.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (44, 'MEHTA HARSH MANISHKUMAR ', '-', '44', '35', 22, '9427580356', '44.jpg', 'Right Handed', 'No', 'No', 1, ''),
@@ -104,14 +104,14 @@ INSERT INTO `players` (`id`, `name`, `previous_team`, `formno`, `memberno`, `age
 (52, 'RAHUL LAPSIWALA', 'STUNNERS XI', '52', '84', 28, '8758690481', '52.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
 (53, 'ALISH GIRISHBHAI PASTAGIYA', 'STUNNERS XI', '53', '21', 31, '9426393233', '53.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (54, 'ROHAN PRADIPKUMAR PANWALA', 'STUNNERS XI', '54', '23', 31, '9974380992', '54.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
-(55, 'MITTAL BHADRESHKUMAR KABRAWALA', 'STUNNERS XI', '55', '150', 29, '8460301063', '55.jpg', 'Left Handed', 'Right Arm', 'No', 1, ''),
+(55, 'MITTAL BHADRESHKUMAR KHADAWALA', 'STUNNERS XI', '55', '150', 29, '8460301063', '55.jpg', 'Left Handed', 'No', 'No', 1, ''),
 (56, 'VISHAL ANILKUMAR GHAEL', 'PLAYERS 11', '56', '146', 31, '9662062156', '56.jpg', 'Left Handed', 'No', 'Yes', 1, ''),
 (57, 'KETAN DILIPBHAI PANWALA', 'FIGHTER 11', '57', '132', 40, '9898040198', '57.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
 (58, 'PARTH N BHAGAT', 'ROVERS XI', '58', '16', 25, '9879217003', '58.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (59, 'DEEP D GHEEWALA', 'ABC 11', '59', '15', 25, '7984408700', '59.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
-(60, 'YASH K LAKDAWALA', '', '60', '12', 27, '9033712894', '60.jpg', 'Right Handed', 'No', 'No', 1, ''),
+(60, 'YASH K LAKDAWALA', '-', '60', '12', 27, '9033712894', '60.jpg', 'Right Handed', 'No', 'No', 1, ''),
 (61, 'SMIT GHEEWALA', 'ABC TEAM', '61', '2', 23, '7990515571', '61.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
-(62, 'GHEEWALA DARSHAN D', '', '62', '3', 23, '9773081188', '62.jpg', 'No', 'Right Arm', 'No', 1, ''),
+(62, 'GHEEWALA DARSHAN D', '-', '62', '3', 23, '9773081188', '62.jpg', 'No', 'Right Arm', 'No', 1, ''),
 (63, 'CHIMPU DILIPKUMAR LAPSIWALA', 'GAME CHALLENGERS(GANCHI SHERI)', '63', '126', 37, '9004288880', '63.jpg', 'Right Handed', 'Right Arm', 'Yes', 1, ''),
 (64, 'BRIJESH A KIKAGANESHWALA', 'CHOKSI ELEVEN', '64', '65', 38, '9727733230', '64.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (65, 'VASU VANKAWALA', 'CHOKSI ELEVEN', '65', '129', 24, '9265166030', '65.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
@@ -141,7 +141,7 @@ INSERT INTO `players` (`id`, `name`, `previous_team`, `formno`, `memberno`, `age
 (89, 'MODI KEVIN ATULKUMAR ', 'STAR XI', '89', '183', 27, '9824839953', '89.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (90, 'MEHUL MAGAJWALA', 'ROVERS XI', '90', '113', 25, '9825176158', '90.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (91, 'HIREN GANDHI', 'ROVERS XI', '91', '33', 38, '9879412334', '91.jpg', 'Right Handed', 'No', 'Yes', 1, ''),
-(92, 'ASHUTOSH PARESHBHAI SOPARIWALA', '', '92', '172', 25, '7405350449', '92.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
+(92, 'ASHUTOSH PARESHBHAI SOPARIWALA', '-', '92', '172', 25, '7405350449', '92.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
 (93, 'MONTU BHARATBHAI BEKAWALA', 'FIGHTER 11', '93', '194', 40, '9664974252', '93.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (94, 'RAVI MUKESHBHAI GHAEL', 'SAHAJ 11', '94', '58', 35, '8140471755', '94.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (95, 'FENIL MUKESHBHAI GHAEL ', 'OM SAI', '95', '59', 31, '8780294463', '95.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
@@ -171,7 +171,7 @@ INSERT INTO `players` (`id`, `name`, `previous_team`, `formno`, `memberno`, `age
 (119, 'MEET GANDHI ', '-', '119', '172', 18, '9624258877', '119.jpg', 'Right Handed', 'LEFT ARM', 'No', 1, ''),
 (120, 'HETVIK VIMALKUMAR B', '-', '120', '139', 15, '9879780235', '120.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
 (121, 'JAY VIJAYBHAI JOSHI', 'KRISHNA 11', '121', '134', 21, '6353469065', '121.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
-(122, 'HARNIL A BEKAWALA', 'FIGHTER 11', '122', '137', 17, '9825110254', '122.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(122, 'HARNIL D BEKAWALA', 'FIGHTER 11', '122', '137', 17, '9825110254', '122.jpg', 'Right Handed', 'No', 'No', 1, ''),
 (123, 'LAKDAWALA PRATHAM JATINKUMAR', 'SHANKAR NAGAR', '123', '47', 20, '8733987557', '123.jpg', 'No', 'LEFT ARM', 'No', 1, ''),
 (124, 'KAPADIYA HIMANSHU', 'SHANKAR NAGAR', '124', '45', 39, '9099031418', '124.jpg', 'No', 'Right Arm', 'No', 1, ''),
 (125, 'SHETHNA VATSAL DHARMESHBHAI', '-', '125', '172', 18, '9054407965', '125.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
@@ -207,7 +207,20 @@ INSERT INTO `players` (`id`, `name`, `previous_team`, `formno`, `memberno`, `age
 (155, 'BODHAWALA JAY JIGNESHKUMAR', '-', '155', '172', 21, '-', '155.jpg', 'Left Handed', 'LEFT ARM', 'No', 1, ''),
 (156, 'DHARMESH B BEKAWALA', 'FIGHTER 11', '156', '138', 44, '9825110295', '156.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
 (157, 'ISHAN BHAVIN RANGOONWALA', 'FIGHTER 11', '157', '133', 21, '9904986069', '157.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
-(158, 'SNEHAL GAJJAR', '-', '158', '131', 38, '8200866615', '158.jpg', 'Right Handed', 'Right Arm', 'No', 1, '');
+(158, 'SNEHAL GAJJAR', '-', '158', '131', 38, '8200866615', '158.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(159, 'DHRUV ANANDKUMAR JADAWALA', 'ROYAL 11', '159', '13', 21, '7285849963', '159.jpg', 'Left Handed', 'Left Arm', 'No', 1, ''),
+(160, 'RUSHABH J GHANDHI', '-', '160', '14', 30, '9408563564', '160.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(161, 'PANWALA KARAN HITESHBHAI', '-', '161', '172', 21, '7984014692', '161.jpg', 'Right Handed', 'No', 'No', 1, ''),
+(162, 'MIHIR S SOPARIWALA', '-', '162', '172', 19, '8140961950', '162.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(163, 'KANAIYO S MODI', '-', '163', '172', 25, '8980442713', '163.jpg', 'Right Handed', 'No', 'No', 1, ''),
+(164, 'GHIWALA DIVYANG', 'SHREYA XL', '164', '172', 33, '8785801650', '164.jpg', 'Right Handed', 'Right Arm', 'Yes', 1, ''),
+(165, 'GHEEWALA ANKUR', 'SHREYA XL', '165', '172', 37, '9913191656', '165.jpg', 'Right Handed', 'Right Arm', 'Yes', 1, ''),
+(166, 'HARDIK ARUNBHAI MODI', 'FIGHTER 11', '166', '172', 28, '8000838787', '166.jpg', 'Right Handed', 'No', 'Yes', 1, ''),
+(167, 'ABHISHEK SOPARIWALA', 'SURAT SPORT CLUB', '167', '172', 26, '9313472743', '167.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(168, 'MOHIT DUDHWALA', 'FIGHTER 11', '168', '142', 24, '8128593881', '168.jpg', 'Right Handed', 'No', 'No', 1, ''),
+(169, 'KAMAL RAMESHBHAI SINGWALA', 'SHREYA XL', '169', '172', 40, '9173905007', '169.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(170, 'RAHUL KALPESH BODAWALA', '-', '170', '', 28, '8320389666', '170.jpg', 'Right Handed', 'Right Arm', 'No', 1, ''),
+(171, 'SUSHANG PANKAJ JINWALA', '-', '171', '172', 36, '9879071999', '171.jpg', 'Right Handed', 'Left Arm', 'No', 1, '');
 
 -- --------------------------------------------------------
 
@@ -264,22 +277,22 @@ CREATE TABLE IF NOT EXISTS `teams_players` (
   `status` varchar(15) NOT NULL COMMENT 'Reserved / Sold',
   `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `teams_players`
 --
 
 INSERT INTO `teams_players` (`id`, `team_id`, `player_id`, `tournament_id`, `sold_points`, `is_captain`, `status`, `created`) VALUES
-(1, 1, 156, 1, 0, 0, 'Reserved', '2022-03-07 16:14:15'),
-(2, 6, 57, 1, 0, 0, 'Reserved', '2022-03-07 16:14:52'),
-(3, 7, 1, 1, 0, 0, 'Reserved', '2022-03-07 16:15:18'),
-(4, 3, 67, 1, 0, 0, 'Reserved', '2022-03-07 16:15:49'),
-(5, 8, 42, 1, 0, 0, 'Reserved', '2022-03-07 16:16:11'),
-(6, 5, 32, 1, 0, 0, 'Reserved', '2022-03-07 16:16:30'),
-(7, 2, 70, 1, 0, 0, 'Reserved', '2022-03-07 16:16:53'),
-(8, 9, 100, 1, 0, 0, 'Reserved', '2022-03-07 16:17:17'),
-(9, 4, 108, 1, 0, 0, 'Reserved', '2022-03-07 16:19:09');
+(1, 1, 156, 1, 0, 1, 'Reserved', '2022-03-07 16:14:15'),
+(2, 6, 57, 1, 0, 1, 'Reserved', '2022-03-07 16:14:52'),
+(3, 7, 1, 1, 0, 1, 'Reserved', '2022-03-07 16:15:18'),
+(4, 3, 67, 1, 0, 1, 'Reserved', '2022-03-07 16:15:49'),
+(5, 8, 42, 1, 0, 1, 'Reserved', '2022-03-07 16:16:11'),
+(6, 5, 32, 1, 0, 1, 'Reserved', '2022-03-07 16:16:30'),
+(7, 2, 70, 1, 0, 1, 'Reserved', '2022-03-07 16:16:53'),
+(8, 9, 100, 1, 0, 1, 'Reserved', '2022-03-07 16:17:17'),
+(9, 4, 108, 1, 0, 1, 'Reserved', '2022-03-07 16:19:09');
 
 -- --------------------------------------------------------
 
@@ -323,7 +336,7 @@ CREATE TABLE IF NOT EXISTS `tournament` (
 --
 
 INSERT INTO `tournament` (`id`, `name`, `email`, `password`, `year`, `logo`, `created_date`, `details`, `active`) VALUES
-(1, 'Shree Surti Modh Vanik Athwa Panch Yuvak Mandal Premier League 2022', 'nishantmeva@gmail.com', '0e7517141fb53f21ee439b355b5a1d0a', '2021-22', 'logo.png', '2021-07-25', NULL, 1);
+(1, 'Shree Surti Modh Vanik Athwa Panch Yuvak Mandal Premier League 2022', 'nishantmeva@gmail.com', '0e7517141fb53f21ee439b355b5a1d0a', '2022', 'logo.png', '2021-07-25', NULL, 1);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
