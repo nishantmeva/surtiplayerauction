@@ -23,6 +23,9 @@ $UnsoldPlayer = getUnsoldPlayer();
                     <th scope="col">Photo</th>
                     <th scope="col">Name</th>
                     <th scope="col">Previous Team</th>
+                    <th scope="col">Batting Style</th>
+                    <th scope="col">Bowling Style</th>
+                    <th scope="col">Is wicket keeper</th>
                     <th scope="col">Phone</th>
                     </tr>
                 </thead>
@@ -34,6 +37,9 @@ $UnsoldPlayer = getUnsoldPlayer();
                             <td><img width="50px" src="../common_uploads/players/<?= $data['photo']; ?>"/></td>
                             <td><?= strtoupper($data['name']); ?></td>
                             <td><?= strtoupper($data['previous_team']); ?></td>
+                            <td><?= strtoupper($data['batting_style']); ?></td>
+                            <td><?= strtoupper($data['bowling_style']); ?></td>
+                            <td><?= strtoupper($data['is_wk']); ?></td>
                             <td><?= $data['phone']; ?></td>
                         </tr>
                     <?php } ?>

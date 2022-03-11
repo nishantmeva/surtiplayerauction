@@ -19,7 +19,7 @@ define('DB_HOST', $hostname);
 define('DB_NAME', $dbname);
 define('DB_USERNAME', $username);
 define('DB_PASSWORD', $password);
-define('SITENAME', 'Shree Surti Modh Vanik Premier League');
+define('SITENAME', 'Shree Surti Modh Vanik Athwa Panch Yuvak Mandal - Cricket Premier League');
 define('YEAR', '2022');
 define('FRONT_SITEURL', '/surtiplayerauction/front');
 

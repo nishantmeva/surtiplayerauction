@@ -26,7 +26,7 @@
                         <tr>
                             <td><?php echo $cnt; ?></td>
                             <td><?php echo $data['team_name']; ?></td>
-                            <td><?php echo $data['player_name']; ?></td>
+                            <td><?php echo $data['player_name']." (".$data['formno'].")"; ?></td>
                             <td><?php echo $data['sold_points']; ?></td>
                             <td><?php echo $data['status']; ?></td>
                             <td>

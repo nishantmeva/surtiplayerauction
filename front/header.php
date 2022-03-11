@@ -35,6 +35,7 @@ require_once('config/functions.php');
                                     <li><a href="auction.php">Auction</a></li>
                                     <li><a href="teams.php">Teams</a></li>
                                     <li><a href="unsold_players.php">Unsold Players</a></li>
+                                    <li><a href="playerlist.php">Player List</a></li>
                                     <li><a href="logout.php">Logout</a></li>
                                 </ul>
                             </nav>

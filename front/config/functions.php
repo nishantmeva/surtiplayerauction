@@ -63,6 +63,27 @@ function getUnsoldPlayer(){
     return $db->get_results($sql1);
 }
 
+function getPlayerList(){
+    $db = new database;
+    $sql1 = "SELECT 
+        `p`.*, 
+        `tp`.`sold_points` as `sold_points`,
+        `tp`.`status` as `sold_status`,
+        `tp`.`is_captain`,
+        `tp`.`team_id`
+        FROM `players` as `p` 
+        left join `teams_players` as `tp` on `p`.`id` = `tp`.`player_id` 
+        where p.status = 1 
+        order by `p`.`id` asc";
+
+    $result = $db->get_results($sql1);
+    if(!empty($result)){
+        return $result; 
+    }else{
+        return 1; 
+    }
+}
+
 function getPlayerDetails($request=array()){
     $where = "where p.status = 1";
     if(!empty($request['formno'])){

@@ -13,7 +13,7 @@ class Assignplayers extends CI_Controller {
 
     public function list() {
         $data['title'] = "Assign Players";
-		$selectArr = array('t.name as team_name','p.name as player_name','a.*');
+		$selectArr = array('t.name as team_name','p.name as player_name','p.formno as formno','a.*');
 		$query = $this->db->select($selectArr)
                   ->from('teams_players a')
                   ->join('teams t', 't.id = a.team_id','inner')

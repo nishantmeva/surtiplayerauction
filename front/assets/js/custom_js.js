@@ -2,11 +2,13 @@ var teamData = [];
 var selectedTeam;
 var selectedPlayer;
 let bid_amt = 0;
+
 function getPlayerData(){
     if($('#formno').val() == ""){
         alert("Please enter form no");
         return false;
     }
+
     var formno = $('#formno').val();
     $('#error').hide();
     $('#playerblock').html('');
@@ -154,6 +156,12 @@ function playersold(){
                 data: {method:"getTeams"},
                 success: function (data) {
                     teamData = data;
+                    const num = selectedPlayer.id.charAt(selectedPlayer.id.length - 1);
+                    const audio = new Audio(`../common_uploads/mp3/${num}.mp3`);
+                    audio.play();
+                    setTimeout(() => {
+                        audio.pause();
+                    }, 10000);
                 }
             });
         }
